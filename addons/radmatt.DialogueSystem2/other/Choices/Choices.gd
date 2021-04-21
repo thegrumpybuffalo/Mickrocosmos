@@ -7,6 +7,7 @@ class_name Choices, "res://addons/radmatt.DialogueSystem2/icons/Choices.svg"
 export (NodePath) var choices_container
 export (PackedScene) var choice_button
 
+
 func _ready():
 	choices_container = get_node(choices_container) # Turn path (string) into a node.
 	hide()

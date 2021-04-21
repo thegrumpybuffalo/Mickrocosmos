@@ -1,4 +1,4 @@
-extends Control
+extends Node
 
 
 # Declare member variables here. Examples:
@@ -8,8 +8,9 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Dialogue.message_parent = $VBoxContainer/HBoxContainer/VBoxContainer/MessageBox
-	Dialogue.start_dialogue("start.json")
+	pass
+	#Dialogue.message_parent = $VBoxContainer/HBoxContainer/VBoxContainer/MessageBox
+	#Dialogue.start_dialogue("start.json")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

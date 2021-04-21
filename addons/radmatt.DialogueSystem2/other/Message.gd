@@ -1,3 +1,4 @@
+
 extends Control
 class_name Message, "res://addons/radmatt.DialogueSystem2/icons/Message.svg"
 
@@ -63,8 +64,7 @@ func _ready():
 
 # SET ITS SIZE TO MATCH THE TEXT
 func _process(delta):
-	pass
-#	Dialogue.Box.get_node("TextBackground").margin_top = 0
+	Dialogue.Box.get_node("TextBackground").margin_top = 0
 
 
 func show_new_message(text, wait_for_choice=false): # Message initiation

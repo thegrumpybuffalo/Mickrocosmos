@@ -22,8 +22,6 @@ export (String, "Auto", "Bubble", "Box") var selected_type = "Auto"
 
 export var dialogue_next_input = "dialogue_next"
 
-export (NodePath) var message_parent 
-
 ##############################
 # SIGNALS:
 
@@ -126,7 +124,6 @@ func find_start():
 
 # Start dialogue
 func start_dialogue(json_path, interacted_object=null):
-	Box = message_parent
 	current_json_path = json_path
 	load_data(json_path)
 
@@ -461,5 +458,4 @@ func get_message_type(current_node):
 
 	elif selected_type == "Bubble":
 		return Bubble
-
 
